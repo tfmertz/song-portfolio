@@ -1,13 +1,13 @@
 //create an overlay for when the about link is clicked
 
-//make the overlay div
+//make the overlay div and close button
 var $overlay = $('<div id="overlay"></div>');
 var $close = $('<a href="#" id="close-overlay">Close</a>');
 
-var $overlayContent = $('<div id="overlay-content"></div');
-var $contact = $('<div id="contact"></div>');
+//create a content div to hold the html we load in using ajax
+var $overlayContent = $('<div id="overlay-content" class="group"></div');
 
-//append button to overlay
+//append button and content to overlay
 $overlay.append($close);
 $overlay.append($overlayContent);
 
