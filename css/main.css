@@ -211,10 +211,10 @@ nav a.selected, nav a:hover {
   padding: 10px 20px;
   background: #E74756;
   color: white;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   margin-bottom: 50px;
-  position: relative;
-  top: -5px;
+
 }
 
 #about {
