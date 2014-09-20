@@ -203,4 +203,25 @@ nav a.selected, nav a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  text-align: center;
+}
+
+#close-overlay {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #E74756;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  position: relative;
+  top: -5px;
+}
+
+#about {
+  background-color: #fff;
+  width: 90%;
+  max-width: 540px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
 }
