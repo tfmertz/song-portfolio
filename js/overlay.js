@@ -4,11 +4,12 @@
 var $overlay = $('<div id="overlay"></div>');
 var $close = $('<a href="#" id="close-overlay">Close</a>');
 
-var $about = $('<div id="about"></div');
+var $overlayContent = $('<div id="overlay-content"></div');
+var $contact = $('<div id="contact"></div>');
 
 //append button to overlay
 $overlay.append($close);
-$overlay.append($about);
+$overlay.append($overlayContent);
 
 //append it to the body, css hides it
 $("body").append($overlay);
@@ -17,15 +18,20 @@ $("body").append($overlay);
 $(".overlay").click(function(event){
 	//prevent the page from going to the about.html or contact.html
 	event.preventDefault();
-	//show the overlay
-	$overlay.show();
+
+	//clear out any existing html
+	$("#overlay-content").html("");
+
 	//figure out which link we pushed
 	if($(this).attr("href") === "about.html")
 	{
 		//load the about html
-		$("#about").load("about-overlay.html");
+		$("#overlay-content").load("about-overlay.html");
+	} else {
+		$("#overlay-content").load("contact-overlay.html");
 	}
-
+	//show the overlay
+	$overlay.show();
 });
 
 //if the close button is pushed
