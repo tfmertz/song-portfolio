@@ -15,10 +15,16 @@ $("body").append($overlay);
 
 //when the about or contact link is clicked
 $(".overlay").click(function(event){
-	//prevent the page from going to the about.html
+	//prevent the page from going to the about.html or contact.html
 	event.preventDefault();
 	//show the overlay
 	$overlay.show();
+	//figure out which link we pushed
+	if($(this).attr("href") === "about.html")
+	{
+		//load the about html
+		$("#about").load("about-overlay.html");
+	}
 
 });
 
