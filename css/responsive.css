@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 668px) {
   /*  TWO COLUMN LAYOUT CONTACT*/
   
   #primary {
@@ -55,7 +55,7 @@
   }
   
   header {
-    border-bottom: 5px solid #599a68;
+    border-bottom: 5px solid #2345A4; /*#599a68;*/
     margin-bottom: 60px;
   }
     
