@@ -165,13 +165,14 @@ body {
 }
 
 header {
-  background: #68b47b;
-  border-color: #599a68;
+  background: #395AB6; /*#68b47b;
+  border-color: #599a68;*/
+  border-color: #2345A4;
 }
 
 /*nav mobile background*/
 nav {
-  background: #599a68;
+  background: #2345A4; /*#599a68;*/
 }
 
 /*logo text*/
@@ -188,8 +189,12 @@ nav a, nav a:visited {
   color: #fff;
 }
 
-nav a.selected, nav a:hover {
-  color: #32673f;
+nav a.selected, nav a.selected:hover {
+  color: #ff5500; /*#32673f;*/
+}
+
+nav a:hover {
+  color: #C04000;
 }
 
 /*  OVERLAY
