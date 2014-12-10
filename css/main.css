@@ -76,7 +76,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: black;
 }
 
 .social-icon {
@@ -195,6 +195,19 @@ nav a.selected, nav a.selected:hover {
 
 nav a:hover {
   color: #C04000;
+}
+
+.github {
+  font-size: 1.25em;
+}
+
+.github a {
+  text-decoration: underline;
+  padding: 10px 0;
+}
+
+.github a:hover {
+  text-decoration: none;
 }
 
 /*  OVERLAY
